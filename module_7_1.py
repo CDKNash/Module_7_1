@@ -24,9 +24,9 @@ class Shop:
         for product in products:
             if product.name not in new_products:
                 self.file.write(str(product) + '\n')
-                self.file.close()
             else:
                 print(f'Продукт {product.name}, {product.weight}, {product.category} уже есть в магазине')
+        self.file.close()
 
 
 s1 = Shop()
